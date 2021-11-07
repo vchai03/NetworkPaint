@@ -23,11 +23,10 @@ public class PaintClient extends JFrame implements ActionListener
 	private int currentSize;
 
 	private DefaultListModel<String> friendModel;		//adds names of ppl in to the room
-	private ArrayList<Person> allFriends;			//required for color coding
+	private ArrayList<Person> allFriends;			
 
 	private final String IP_ADDRESS = "192.168.1.4";
 
-	// the GUI is provided for you
 	public PaintClient(){
 
 		setLayout(null);
@@ -239,11 +238,8 @@ public class PaintClient extends JFrame implements ActionListener
 					
 		}
 
-		//not used for this project
-		public void mouseMoved(MouseEvent e) {}
 	}
 
-	//Do not edit this class
 	public class Point{
 
 		private int xLoc;
@@ -263,7 +259,7 @@ public class PaintClient extends JFrame implements ActionListener
 		}
 	}
 
-	//this class is used to help color code the friends list. Do not edit this class.
+	//this class is used to help color code the friends list
 	public class Person{
 		private String name;
 		private Color color;
@@ -290,7 +286,7 @@ public class PaintClient extends JFrame implements ActionListener
 	}
 
 	//this class color codes the JList
-	//uses the arraylist of friends.  Do not edit this class
+	//uses the arraylist of friends
 	public class RowRenderer extends DefaultListCellRenderer{
 
 		public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
